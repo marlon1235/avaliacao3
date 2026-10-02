@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estágio Já</title>
+
+
+ <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Estágio Já</h1>
+        <p>Encontre e divulgue vagas de estágio</p>
+    </header>
+
+    <section class="formulario">
+        
+
+        <h2>Cadastrar vaga</h2>
+
+        <form id="vagaForm">
+
+            <label>Empresa</label>
+            <input type="text" id="empresa" placeholder="Nome da empresa" required>
+
+            <label>Nome da vaga</label>
+            <input type="text" id="vaga" placeholder="Ex: Estagiário de TI" required>
+
+            <label>Área</label>
+            <input type="text" id="area" placeholder="Ex: Tecnologia" required>
+
+            <label>Cidade</label>
+            <input type="text" id="cidade" placeholder="Ex: Fortaleza - CE" required>
+
+            <label>Descrição</label>
+            <textarea id="descricao" placeholder="Descreva a vaga" required></textarea>
+
+            <button type="submit">
+                Cadastrar vaga
+            </button>
+
+        </form>
+
+        <p id="mensagem"></p>
+
+    </section>
+
+    <!-- Tabela -->
+    <section class="tabela">
+
+        <h2>Vagas disponíveis</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Vaga</th>
+                    <th>Área</th>
+                    <th>Cidade</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelaVagas">
+                <!-- As vagas aparecerão aqui -->
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <footer>
+        <p>© 2026 - Estágio Já</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
+
